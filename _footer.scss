@@ -1,0 +1,132 @@
+.footer{
+    margin: 80px 0;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    @include breakpoint($width){
+        display: flex;
+        flex-direction: column;
+        justify-content: none;
+    }
+}
+
+.footer__first{
+    width: 50.6%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    @include breakpoint($width){
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 40px;
+        padding-bottom: 48px;
+    }
+}
+
+.footer__second{
+    width: 40.3%;
+    h1{
+        font-weight: 600;
+        font-size: $font-mini;
+        line-height: 1.5;
+        padding-bottom: 16px;
+    }
+    h2{
+        font-weight: 400;
+        font-size: $font-mini;
+        line-height: 1.5;
+    }
+    h3{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+    @include breakpoint($width){
+        width: 100%;
+    }
+}
+
+.second__input{
+    display: flex;
+    gap: 16px;
+    padding: 24px 0 16px;
+    input{
+        width: calc(100% - 136px);
+        border: 1px solid #000;
+        border-radius: 5px;
+        padding: 12px;
+        &::placeholder{
+            font-size: $font-mini;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+        @include breakpoint($width){
+            width: 100%;
+        }
+    }
+
+    @include breakpoint($width){
+        flex-direction: column;
+    }
+}
+
+.first__item{
+    h1{
+        font-weight: 600;
+        font-size: $font-mini;
+        line-height: 1.5;
+        margin-bottom: 16px;
+    }
+    h2{
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 8px 0;
+    }
+}
+
+.plus{
+    h1{
+        color: transparent;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

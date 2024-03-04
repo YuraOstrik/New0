@@ -1,0 +1,91 @@
+.product{
+    margin: 110px 0;
+    @include breakpoint($width){
+        margin: 48px 0;
+    }
+}
+
+.product__title{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    h1{
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 1.2;
+        margin-bottom: 16px;
+        @include breakpoint($width){
+            font-size: 32px;
+        }
+    }
+    h2{
+        font-weight: 400;
+        font-size: $font-normal;
+        line-height: 1.5;
+        @include breakpoint($width){
+            font-size: 18px;
+        }
+    }
+    @include breakpoint($width){
+        margin-bottom: 48px;
+    }
+}
+
+.clock{
+    @include breakpoint($width){
+        display: none;
+    }
+}
+
+.chain{
+    display: none;
+    margin: 48px auto 0;
+    @include breakpoint($width){
+        display: block;
+    }
+}
+
+.product__bolt{
+    font-size: $font-normal;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.product__card{
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+    @include breakpoint($width){
+        font-size: 18px;
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+}
+
+.card__item{
+    img{
+        max-width: 304px;
+        width: 100%;
+        @include breakpoint($width){
+            max-width: 380px;
+        }
+    }
+}
+
+.product__price{
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__small{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.product__text{
+    margin: 16px 0;
+}
+
+
+
